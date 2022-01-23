@@ -401,7 +401,7 @@ botão.
 
 - [1.26](#1.26) O código deve estar livre de erros de ortografia. Nomes de variáveis, funções, comentários devem ser escritos corretamente.
 
-  Normalmente, para evitar a maioria dos erros, são usadas extensões para `IDE`, para `vscode` por exemplo existe uma boa extensão [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code- corretor ortográfico).
+  Normalmente, para evitar a maioria dos erros, são usadas extensões para `IDE`, para `vscode` por exemplo existe uma boa extensão [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-corretorortográfico).
 
 <a name="1.27"></a>
 
@@ -411,7 +411,7 @@ botão.
 
 <a name="1.28"></a>
 
-- [1.28](#1.28) Não estenda classes padrão como Array, Error, Map e outras porque aqui está [por que](https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#extending- built- ins-like-error-array-and-map-may-no-mais-work)
+- [1.28](#1.28) Não estenda classes padrão como Array, Error, Map e outras porque aqui está [por que](https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#extending-built-ins-like-error-array-and-map-may-no-mais-work)
 
 <a name="2"></a>
 
