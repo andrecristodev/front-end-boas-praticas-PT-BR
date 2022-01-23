@@ -137,11 +137,11 @@ botão.
   Seriamente:
 
   ```javascript
-  const lifes = [true, false, false, true, true];
-  vivoTotal = 0;
-  for (seja i = 0; i < lifes.length; i++) {
-    vivoTotal += vidas[i]; // aqui adicionamos um elemento de array ao número, que é booleano.
-  }
+    const lifes = [true, false, false, true, true];
+    aliveTotal = 0;
+    for (let i = 0; i < lifes.length; i++) {
+      aliveTotal += lifes[i]; // aqui adicionamos um elemento de array ao número, que é booleano.
+    }
   ```
 
   O pior é que esse código funcionará, mas tudo é muito vulnerável nele e para mantê-lo, você deve ter em mente constantemente que existem bolas com números somados.
@@ -173,15 +173,15 @@ botão.
   Boa:
 
   ```javascript
-  classe Componente {
-    bindEventListeners() {
-      topButton.addEventListener("clique", this.handleStopButtonClick);
+    class Component {
+      bindEventListeners() {
+      topButton.addEventListener("click", this.handleStopButtonClick);
     }
 
     handleStopButtonClick() {
-      // ...
+     // ...
     }
-  }
+   }
   ```
 
 <a name="1.14"></a>
@@ -230,7 +230,7 @@ botão.
   É proibido:
 
   ```javascript
-   if(status === 'ativo') {...}
+    if (status === 'active') {...}
   ```
 
 <a name="1.17"></a>
@@ -247,22 +247,22 @@ botão.
     Por exemplo:
 
   ```javascript
-  import * como React de "react";
-  bloco de importação de "bem-cn";
-  import { connect, Dispatch } from "react-redux";
-  import { bindActionCreators } de "redux";
-  import { arrayPush } from "redux-form";
+    import * as React from "react";
+    import block from "bem-cn";
+    import { connect, Dispatch } from "react-redux";
+    import { bindActionCreators } from "redux";
+    import { arrayPush } from "redux-form";
 
-  import { Modal } de "compartilhado/visualização/elementos";
-  import { IPreset } de "shared/types/models";
-  import { IAppReduxState } de "shared/types/app";
-  import { actions as notificationActions } from "services/notification";
-  import { seletores como configSelectors } de "services/config";
+    import { Modal } from "shared/view/elements";
+    import { IPreset } from "shared/types/models";
+    import { IAppReduxState } from "shared/types/app";
+    import { actions as notificationActions } from "services/notification";
+    import { selectors as configSelectors } from "services/config";
 
-  import { actions, selectors } from "../../../redux";
-  import { managePresetsFormEntry } de "../../../redux/reduxFormEntries";
-  import { Predefinições } de "../../components/ManagePresets";
-  import "./ManagePresets.scss";
+    import { actions, selectors } from "../../../redux";
+    import { managePresetsFormEntry } from "../../../redux/reduxFormEntries";
+    import { Presets } from "../../components/ManagePresets";
+    import "./ManagePresets.scss";
   ```
 
   Além disso, para qualquer subárvore de um elemento de caminho, não deve haver uma subárvore cujas importações sejam compartilhadas por outra subárvore de mesma profundidade.
@@ -270,35 +270,35 @@ botão.
   As importações da subárvore `shared` (profundidade 1) são compartilhadas pelas importações da subárvore de serviços.
 
   ```javascript
-  import {IModel} de "shared/types/models";
-  import {i18nConnect} de "services/i18n";
-  import { Componente } de "compartilhado/visualização/componentes";
+    import { IModel } from "shared/types/models";
+    import { i18nConnect } from "services/i18n";
+    import { Component } from "shared/view/components";
   ```
 
   Estará correto assim:
 
   ```javascript
-  import {IModel} de "shared/types/models";
-  import { Componente } de "compartilhado/visualização/componentes";
-  import {i18nConnect} de "services/i18n";
+    import { IModel } from "shared/types/models";
+    import { Component } from "shared/view/components";
+    import { i18nConnect } from "services/i18n";
   ```
 
   Ou em:
 
   ```javascript
-  import { IAppReduxState } de "shared/types/app";
-  import { Componente } de "compartilhado/visualização/componentes";
-  import {IModel} de "shared/types/models";
-  import {i18nConnect} de "services/i18n";
+    import { IAppReduxState } from "shared/types/app";
+    import { Component } from "shared/view/components";
+    import { IModel } from "shared/types/models";
+    import { i18nConnect } from "services/i18n";
   ```
 
   As importações de subárvore `shared/types` (profundidade 2) são separadas por importações de subárvore `shared/view`. Estará correto assim:
 
   ```javascript
-  import { IAppReduxState } de "shared/types/app";
-  import {IModel} de "shared/types/models";
-  import { Componente } de "compartilhado/visualização/componentes";
-  import {i18nConnect} de "services/i18n";
+    import { IAppReduxState } from "shared/types/app";
+    import { IModel } from "shared/types/models";
+    import { Component } from "shared/view/components";
+    import { i18nConnect } from "services/i18n";
   ```
 
 <a name="1.18"></a>
@@ -308,30 +308,30 @@ botão.
   Seriamente:
 
   ```javascript
-  exportar classe Foo {
-    // ...
-  }
-  exportar classe Barra {
-    // ...
-  }
-  // finita la comedia
+    export class Foo {
+      // ...
+    }
+    export class Bar {
+     // ...
+    }
+  // a comédia acaba
   ```
 
   Boa:
 
   ```javascript
-  classe Foo {
-    // ...
-  }
-  classe Barra {
-    // ...
-  }
-  export { foo, bar };
+    class Foo {
+      // ...
+    }
+    class Bar {
+      // ...
+    }
+    export { Foo, Bar };
   ```
 
 <a name="1.19"></a>
 
-- [1.19](#1.19) Em caso de dúvida se um navegador suporta um recurso, verifique se o recurso está definido diretamente, em vez de comparar `user-agent` com os nomes e versões dos navegadores que o suportam de acordo com a documentação. E para o bem, geralmente use [Modernizr] (https://modernizr.com/).
+- [1.19](#1.19) Em caso de dúvida se um navegador suporta um recurso, verifique se o recurso está definido diretamente, em vez de comparar `user-agent` com os nomes e versões dos navegadores que o suportam de acordo com a documentação. E para o bem, geralmente use [Modernizr](https://modernizr.com/).
 
 <a name="1.20"></a>
 
@@ -353,20 +353,20 @@ botão.
 
   ```javascript
   // aqui a regra é violada, uma variável global é criada sem janela, e o acesso a ela também é sem janela:
-  teste de funcionamento() {
+  function test() {
     foo = "olá mundo"; // note que a variável foi criada sem var, então ela é global
   }
-  teste();
-  log do console(foo); // saída 'hello world', chama também sem janela
+  test();
+  console.log(foo); // saída 'olá mundo', chama também sem janela
   ```
 
   ```javascript
   // isso é seguido pela variável global declarada, como deveria:
-  teste de funcionamento() {
+  function test() {
     window.foo = "olá mundo";
   }
-  teste();
-  console.log(window.foo); // saída 'hello world', acessada como uma >propriedade do objeto window
+  test();
+  console.log(window.foo); // saída 'olá mundo', acessada como uma >propriedade do objeto window
   ```
 
 <a name="1.22"></a>
@@ -395,7 +395,7 @@ botão.
 
 <a name="1.25"></a>
 
-- [1.25](#1.25) É muito útil entender como os ciclos de redesenho do navegador funcionam e como você pode verificar e melhorar o desempenho do DOM - aqui no artigo [fontes úteis] estão listadas (https://isobar-us.github. io/code -standards/#javascript_javascript_performance).
+- [1.25](#1.25) É muito útil entender como os ciclos de redesenho do navegador funcionam e como você pode verificar e melhorar o desempenho do DOM - aqui no artigo [fontes úteis] estão listadas (https://isobar-us.github.io/code-standards/#javascript_javascript_performance).
 
 <a name="1.26"></a>
 
@@ -443,7 +443,7 @@ botão.
   Os prefixos usados ​​no início das variáveis ​​são: `is/is`, `has`, `with`. Algumas vezes o nome de uma variável `boolean` pode ser formulado como uma declaração: `selectedColsWereChanged`, o que tornará o código mais legível e compreensível.
 
   `` Javascript
-  IF (SelectedColswerchanged) {// Something ...}
+  if (SelectedColswerchanged) {// Something ...}
   ``
 
   Por outro lado, ninguém limita você a uma coleção de outras construções em inglês: `Will, Should, etc.`. que querem expressar em código. Também existe um caso assim: alguns nomes não precisam de informações adicionais que mostrem que é `booleano` (seja de acordo com o idioma afetado, ou historicamente): `pened, hidden, disabled, etc.`. Em geral, aprenda inglês para expressar corretamente seus pensamentos e códigos :) Assim você não precisará se lembrar de todas essas coisas e ficará claro por que de uma forma ou de outra
@@ -564,7 +564,7 @@ botão.
 - [4.2] (# 4.2)Aprenda melhor práticas para grandes bibliotecas que você inclui no projeto.
 
   Existe um [guia] para Angular (https://github.com/mgechev/angularjs-style-guide/blob/master/README-ru-ru.md).  
-   Para React, há [guide](https://github.com/airbnb/javascript/tree/master/react) ou [this](https://medium.com/lexical-labs-engineering/redux-best- práticas-64d59775802e).
+   Para React, há [guide](https://github.com/airbnb/javascript/tree/master/react) ou [this](https://medium.com/lexical-labs-engineering/redux-best-práticas-64d59775802e).
 
 <a name="4.3"></a>
 
@@ -657,7 +657,7 @@ botão.
   // Não faça apenas
   $(window).scroll(...);
   // mas
-  $(window).on('scroll.myComponent', function (evento) {...});
+  $(window).on('scroll.myComponent', function (event) {...});
   ```
 
   Isso facilitará a desconexão de manipuladores quando eles não forem mais necessários.
@@ -699,7 +699,7 @@ enquanto_ <a name="6.1"></a>
 
 <a name="6.2"></a>
 
-- [6.2](#6.2) O método `render()` deve ser limpo ([ler documentos](https://reactjs.org/docs/react-component. html #render)).
+- [6.2](#6.2) O método `render()` deve ser limpo ([ler documentos](https://reactjs.org/docs/react-component.html#render)).
 
 <a name="6.3"></a>
 
@@ -820,7 +820,7 @@ enquanto_ <a name="6.1"></a>
 
   Há apenas um arquivo para cada módulo. Sem usar o webpack e outros bundlers, tome cuidado para não poluir o escopo global (agrupe todo o conteúdo de cada arquivo em uma função de chamada automática).
 
-  Dentro da estrutura de um módulo, descreva apenas funcionalidades semelhantes que são unidas pelo significado. Isso se chama [conectividade] 82%D1%8C_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1 %80%D0%BE %D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)>). O outro lado da moeda - [engajamento] D0%BD%D0%B8%D0%B5_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC %D0%BC%D0%B8%D1 %80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)>), quando os módulos dependem muito um do outro - isso Deveria ser evitado. Ou seja, o princípio geral é que os módulos devem ser divididos para que dentro de cada módulo haja a máxima semelhança da área de trabalho, e entre os módulos haja a máxima diferença. Por exemplo, em estatística, a segmentação é realizada de acordo com os mesmos princípios, todos os grupos devem consistir nos elementos mais semelhantes e, ao mesmo tempo, diferir entre si o máximo possível :).
+  Dentro da estrutura de um módulo, descreva apenas funcionalidades semelhantes que são unidas pelo significado. Isso se chama [conectividade](https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D1%8C_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)). O outro lado da moeda - [engajamento](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)), quando os módulos dependem muito um do outro - isso Deveria ser evitado. Ou seja, o princípio geral é que os módulos devem ser divididos para que dentro de cada módulo haja a máxima semelhança da área de trabalho, e entre os módulos haja a máxima diferença. Por exemplo, em estatística, a segmentação é realizada de acordo com os mesmos princípios, todos os grupos devem consistir nos elementos mais semelhantes e, ao mesmo tempo, diferir entre si o máximo possível :).
 
 <a name="8.2"></a>
 
@@ -851,9 +851,9 @@ enquanto_ <a name="6.1"></a>
     box.shoes = { tênis: 2 };
   }
 
-  addBall(caixa);
-  addComida(caixa);
-  addSapatos(caixa);
+  addBall(box);
+  addFood(box);
+  addShoes(box);
   ```
 
   Por causa de tais ações, o escopo da variável se torna muito grande e fica difícil entender qual função e quando mudou a variável. Quando ocorrer um erro na 10ª função, não ficará claro por que a caixa contém 5 pares de tênis e 15 cenouras.
@@ -890,6 +890,6 @@ enquanto_ <a name="6.1"></a>
 
 ## Security
 
-- [Browser Security Handbook from Google](https://code.google.com/archive/p/browsersec/wikis/Main.wiki ).
+- [Browser Security Handbook from Google](https://code.google.com/archive/p/browsersec/wikis/Main.wiki).
 - [Folha de dicas de segurança HTML5](https://html5sec.org/#javascript).
 - [Noções básicas de segurança da Web](https://github.com/vasanthk/web-security-basics).
