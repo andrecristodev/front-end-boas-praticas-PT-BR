@@ -31,7 +31,7 @@
  
 - [1.3](#1.3) Todos os elementos com texto, cujo conteúdo é gerado dinamicamente, são verificados para que não quebrem com mais texto do que no layout.
  
-  Nos nomes substituímos o famoso [Constantino de Constantinopla] (https://tema.livejournal.com/1322108.html).  
+  Nos nomes substituímos o famoso [Constantino de Constantinopla](https://tema.livejournal.com/1322108.html).  
   O ideal é que os momentos difíceis de dimensionar com o texto possam ser encontrados na fase de conhecer o layout e fazer perguntas ao designer.
  
 <a name="1.4"></a>
@@ -148,7 +148,7 @@
  
 - [2.2](#2.2) A estrutura das tags deve vir principalmente do conteúdo, não do design
  
-  ![exemplo](http://image.prntscr.com/image /a89c1aed00f14864851989caceacd59d .png) - por exemplo, esse elemento pode ser organizado como quatro elementos consecutivos: um ícone de mensagem, um crachá com o número 10, um ícone de avatar e um nome de usuário. Mas aqui é necessário combinar explicitamenteusando `<div>` dois blocospara que sejam semanticamente separados - um bloco com informações sobre a mensagem e um bloco sobre o usuário. Para css, você pode ter que escrever estilos extras, mas o layout será mais significativo e não será vinculado novamente ao design.
+  ![exemplo](http://image.prntscr.com/image/a89c1aed00f14864851989caceacd59d.png) - por exemplo, esse elemento pode ser organizado como quatro elementos consecutivos: um ícone de mensagem, um crachá com o número 10, um ícone de avatar e um nome de usuário. Mas aqui é necessário combinar explicitamenteusando `<div>` dois blocospara que sejam semanticamente separados - um bloco com informações sobre a mensagem e um bloco sobre o usuário. Para css, você pode ter que escrever estilos extras, mas o layout será mais significativo e não será vinculado novamente ao design.
  
 <a name="2.3"></a>
  
@@ -175,7 +175,7 @@ Todos os atributos devem estar entre aspas duplas
   ```html
   <img largura=200 />
   <div classe=bloco>
-    <a href = '/ algum/url'
+    <a href = '/algum/url'
   
   ```
  
@@ -184,7 +184,7 @@ Todos os atributos devem estar entre aspas duplas
   ```html
   <img largura="200" />
   <div classe="bloco">
-    <a href = "/ algum / url"
+    <a href = "/algum/url"
   
   ```
  
