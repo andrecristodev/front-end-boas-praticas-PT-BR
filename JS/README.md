@@ -395,7 +395,7 @@ botão.
 
 <a name="1.25"></a>
 
-- [1.25](#1.25) É muito útil entender como os ciclos de redesenho do navegador funcionam e como você pode verificar e melhorar o desempenho do DOM - aqui no artigo [fontes úteis] estão listadas (https://isobar-us.github.io/code-standards/#javascript_javascript_performance).
+- [1.25](#1.25) É muito útil entender como os ciclos de redesenho do navegador funcionam e como você pode verificar e melhorar o desempenho do DOM - aqui no artigo [fontes úteis](https://isobar-us.github.io/code-standards/#javascriptjavascriptperformance) estão listadas.
 
 <a name="1.26"></a>
 
@@ -561,9 +561,9 @@ botão.
 
 <a name="4.2"> </a>
 
-- [4.2] (# 4.2)Aprenda melhor práticas para grandes bibliotecas que você inclui no projeto.
+- [4.2](#4.2)Aprenda melhor práticas para grandes bibliotecas que você inclui no projeto.
 
-  Existe um [guia] para Angular (https://github.com/mgechev/angularjs-style-guide/blob/master/README-ru-ru.md).  
+  Existe um [guia](https://github.com/mgechev/angularjs-style-guide/blob/master/README-ru-ru.md) para Angular.  
    Para React, há [guide](https://github.com/airbnb/javascript/tree/master/react) ou [this](https://medium.com/lexical-labs-engineering/redux-best-práticas-64d59775802e).
 
 <a name="4.3"></a>
