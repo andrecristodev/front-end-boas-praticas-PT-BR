@@ -802,7 +802,7 @@ enquanto_ <a name="6.1"></a>
 - [7.5](#7.5) Materiais úteis:
 
   - [Perf.Rocks](https://perf.rocks/)
-  - [calendar](https://calendar. perfplanet.com/2014/)
+  - [calendar](https://calendar.perfplanet.com/2014/)
   - [Regras do PageSpeed ​​Insights](https://developers.google.com/speed/docs/insights/rules)
   - [avascriptrocks](http://javascriptrocks.com/)
 
