@@ -131,7 +131,7 @@
  
 - [1.8](#1.8) Use tags semânticas.
  
-  Você pode descobrir por que eles devem ser usados ​​[aqui](https://www.youtube.com/watch?v=bDYEnNzprzE) e [aqui](https://developer.mozilla.org/en/docs/Learn/ %D0 %94%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C/HTML).  
+  Você pode descobrir por que eles devem ser usados ​​[aqui](https://www.youtube.com/watch?v=bDYEnNzprzE) e [aqui](https://developer.mozilla.org/en/docs/Learn/%D0 %94%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C/HTML).  
   [Fluxograma](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf) para selecionar tags semânticas.
  
 <a name="2"></a>
