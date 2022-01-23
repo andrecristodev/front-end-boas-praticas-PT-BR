@@ -79,9 +79,9 @@
  
   Por exemplo, um layout pode ter uma faixa centralizada verticalmente em relação ao texto:
  
-  | ![Exemplo](https://user-images.githubusercontent.com/12808495/55335190-df687980-54c4-11e9-8623-13ecdb996ebc.png) |
+  | ![Exemplo](https://user-images.githubusercontent.com/12808495/55335190-df687980-54c4-11e9-8623-13ecdb996ebc.png)  |
   | :------------------------------------------------- -------------------------------------------------- ----------: |
-  |                       _essa foto é apenas um exemplo, não o fato de que existe apenas um erro_                       |
+  |                       _essa foto é apenas um exemplo, não o fato de que existe apenas um erro_                    |
  
   O designer pode apenas colocar visualmente essa faixa no nível médio das letras inferiores do texto, no entanto, como designers de layout, basta aplicar vertical-align: middle e você verá que a faixa está acima/abaixo do nível que o design mostrou, e Pixel Perfect destaca isso claramente. Na maioria das vezes, você não precisa codificar algum recuo não óbvio, apenas para combinar perfeitamente com o layout - é melhor dizer ao designer que a tira é colocada automaticamente em um local diferente e é melhor deixá-la lá. Um designer para aprender tipografia.
  
@@ -89,9 +89,8 @@
  
 - [1.12](#1.12) Tente tornar o site o mais fluido possível (defina a largura como uma porcentagem e defina max-width, min-width) - use um elemento fixo largura somente se o layout não tiver como fugir disso.
  
-  Se você precisar de um site de largura fixa, verifique o lado direito de cada página em telas pequenas. Um erro muito comum iniciantes não fazem todos os elementos com min-width, e a rolagem horizontal é obtida assim
- 
-  :!
+  Se você precisar de um site de largura fixa, verifique o lado direito de cada página em telas pequenas. Um erro muito comum iniciantes não fazem todos os elementos com min-width, e a rolagem horizontal é obtida assim:
+  !https://camo.githubusercontent.com/d91256042acb31ca2920c783f40f5a2914632278f941ce990d81704896b97ab2/68747470733a2f2f72697a7a6f6d612e636f6d2f722f66696c65732f61383761306132386238346436333236643466333930396538383031646162372d36306464396231356135663263356534393537323665373435343565646361652d302d302e37303136373238313834363438353234
  
  name="1.13"></a>
  
