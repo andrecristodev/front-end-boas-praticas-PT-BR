@@ -90,9 +90,8 @@
 - [1.12](#1.12) Tente tornar o site o mais fluido possível (defina a largura como uma porcentagem e defina max-width, min-width) - use um elemento fixo largura somente se o layout não tiver como fugir disso.
  
   Se você precisar de um site de largura fixa, verifique o lado direito de cada página em telas pequenas. Um erro muito comum iniciantes não fazem todos os elementos com min-width, e a rolagem horizontal é obtida assim:
-  !https://camo.githubusercontent.com/d91256042acb31ca2920c783f40f5a2914632278f941ce990d81704896b97ab2/68747470733a2f2f72697a7a6f6d612e636f6d2f722f66696c65732f61383761306132386238346436333236643466333930396538383031646162372d36306464396231356135663263356534393537323665373435343565646361652d302d302e37303136373238313834363438353234
- 
- name="1.13"></a>
+  
+   ![image](https://rizzoma.com/r/files/a87a0a28b84d6326d4f3909e8801dab7-60dd9b15a5f2c5e495726e74545edcae-0-0.7016728184648524)
  
 - [1.13](#1.13) Ao construir um projeto na ausência de design (em estruturas CSS, por exemplo), evite "esculpir".
  
@@ -154,7 +153,7 @@
  
 - [2.5](#2.5) Evite fixar a altura.
  
-  Quase sempre, usar umafixa em pixels, porcentagens e outras unidades 'altura' é um sinal de código ruim. Isso torna o comportamento de elementos que seguem uma altura fixa muito obscuro, e o conteúdo pode ser recortado ou sobreposto em elementos subsequentes.
+  Quase sempre, usar uma fixa em pixels, porcentagens e outras unidades 'altura' é um sinal de código ruim. Isso torna o comportamento de elementos que seguem uma altura fixa muito obscuro, e o conteúdo pode ser recortado ou sobreposto em elementos subsequentes.
  
   Quando ainda pode ser necessário:
  
@@ -172,7 +171,7 @@
  
   ![Exemplo](https://user-images.githubusercontent.com/12808495/55335190-df687980-54c4-11e9-8623-13ecdb996ebc.png)
  
-  Aqui a imagem, o texto e a faixa devem ser centralizados usando `vertical- align`e não `top: 55px` para a faixa.
+  Aqui a imagem, o texto e a faixa devem ser centralizados usando `vertical-align`e não `top: 55px` para a faixa.
  
   Muitas vezes, casos de centralização mais complexos aparecerão - quase todo mundo tem seu próprio método, você precisa estudá-los separadamente.
  
@@ -202,11 +201,11 @@
  
 <a name="2.10"></a>
  
-- [2.10](#2.10) Remova todas as regras não utilizadas e regras que não afetem a exibição de forma alguma (por exemplo, propriedades padrão duplicadas ou null `margin`já, se não foremdefinido ) - eles podem posteriormente apresentar um comportamento não óbvio ao editar e, por causa deles, é difícil entender o projeto.
+- [2.10](#2.10) Remova todas as regras não utilizadas e regras que não afetem a exibição de forma alguma (por exemplo, propriedades padrão duplicadas ou null `margin`já, se não forem definido ) - eles podem posteriormente apresentar um comportamento não óbvio ao editar e, por causa deles, é difícil entender o projeto.
  
 <a name="2.11"></a>
  
-- [2.11](#2.11) Palavras totalmente maiúsculas devem ser preferencialmente feitas usando o estilo `text-transform: uppercase` emvez de digitar letras maiúsculas.
+- [2.11](#2.11) Palavras totalmente maiúsculas devem ser preferencialmente feitas usando o estilo `text-transform: uppercase` em vez de digitar letras maiúsculas.
  
 <a name="2.12"></a>
  
@@ -227,11 +226,11 @@
   Exemplo:
  
   ``` css
-  .coisa {
-    -webkit-transição: tudo 100ms;
-    -moz-transição: tudo 100ms;
-    -o-transição: tudo 100ms;
-    transição: tudo 100ms;
+  .thing {
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -o-transition: all 100ms;
+    transition: all 100ms;
   }
   ```
  
@@ -253,33 +252,33 @@
  
 <a name="3.4"></a>
  
-- [3.4](#3.4) Conecte diferentesmesma fonte sob o mesmo nome, mas para diferentes pesos da`font-weight` e `font-style`.
+- [3.4](#3.4) Conecte diferentes estilos da mesma fonte com o mesmo nome, mas para diferentes pesos da`font-weight` e `font-style`.
  
   ``` css
   @font-face {
-    família de fontes: "Lato";
-    src: url("../fonts/lato-regular.woff2"), url("../fonts/lato-regular.woff");
-    peso da fonte: 400;
-    estilo de fonte: normais;
+   font-family: "Lato";
+   src: url("../fonts/lato-regular.woff2"), url("../fonts/lato-regular.woff");
+   font-weight: 400;
+   font-style: normal;
   }
   @font-face {
-    família de fontes: "Lato";
-    src: url("../fonts/lato-italic.woff2"), url("../fonts/lato-italic.woff");
-    peso da fonte: 400;
-    estilo de fonte: itálico;
+   font-family: "Lato";
+   src: url("../fonts/lato-italic.woff2"), url("../fonts/lato-italic.woff");
+   font-weight: 400;
+   font-style: italic;
   }
   @font-face {
-    família de fontes: "Lato";
-    src: url("../fonts/lato-light.woff2"), url("../fonts/lato-light.woff");
-    peso da fonte: 300;
-    estilo de fonte: normais;
+   font-family: "Lato";
+   src: url("../fonts/lato-light.woff2"), url("../fonts/lato-light.woff");
+   font-weight: 300;
+   font-style: normal;
   }
   @font-face {
-    família de fontes: "Lato";
+    font-family: "Lato";
     src: url("../fonts/lato-lightitalic.woff2"),
-      url("../fonts/lato-lightitalic.woff");
-    peso da fonte: 300;
-    estilo de fonte: itálico;
+    url("../fonts/lato-lightitalic.woff");
+    font-weight: 300;
+    font-style: italic;
   }
   ```
  
@@ -290,8 +289,8 @@
   Eles são separados por vírgulas em `font-family`, então cada uso de `font-family` deve seguir o padrão:
  
   ``` css
-  bloquear {
-    família de fontes: Helvética, Arial, sem serifa;
+  block {
+   font-family: Helvetica, Arial, sans-serif;
   }
   ```
  
@@ -308,8 +307,8 @@
   Exemplo:
  
   ``` css
-  bloquear {
-    família de fontes: 'Times New Roman', serifa;
+   block {
+    font-family: 'Times New Roman', serif;
   }
   ```
  
@@ -423,7 +422,7 @@
  
   ``` css
   .header__button {
-    margem esquerda: 3rem;
+    margin-left: 3rem;
   }
   ```
  
@@ -459,7 +458,7 @@
  
 <a name="5.4"></a>
  
-- [5.4](#5.4) E z-index` Você também pode afetar ` sobre isso [aqui](https://habrahabr.ru/post/166435 /).
+- [5.4](#5.4) E z-index` Você também pode afetar ` sobre isso [aqui](https://habrahabr.ru/post/166435/).
  
 <a name="5.5"></a>
  
@@ -475,7 +474,7 @@
  
 <a name="5.7"></a>
  
-- [5.7](#5.7) Pseudo-elements (`::after/before`) [não funciona](https://stackoverflow.com/questions/14585070/css -after-pseudo -element-not-showing-up-on-img/14586588#14586588) com `tags de fechamento automático` (`<img />`, `<input />`, etc.).
+- [5.7](#5.7) Pseudo-elements (`::after/before`) [não funciona](https://stackoverflow.com/questions/14585070/css-after-pseudo-element-not-showing-up-on-img/14586588#14586588) com `tags de fechamento automático` (`<img />`, `<input />`, etc.).
  
 <a name="5.8"></a>
  
