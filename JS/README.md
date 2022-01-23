@@ -5,7 +5,7 @@
 3. [Nomeação da Função](#3)
 4. [Bibliotecas](#4)
 5. [JQuery](#5)
-6. [Reaja](#6)
+6. [React](#6)
 7. [Desempenho](#7)
 8. [Arquitetura](#8)
 9. [Segurança](#9)
