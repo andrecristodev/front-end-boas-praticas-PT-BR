@@ -241,7 +241,7 @@ Todos os atributos devem estar entre aspas duplas
       Sobrenome:
       <input tipo="texto" nome="sobrenome" value="Doe" />
     </label>
-    <botão type="enviar"Enviar</botão>>
+    <button type="enviar"Enviar</button>>
   </form>
   ```
  
