@@ -16,7 +16,7 @@
   ![bom exemplo](http://image.prntscr.com/image/665a3fda6b3847e687c4ed5fdbbaec22.png)
  
   Não assim:  
-  ![mau exemplo](http://image.prntscr.com/image/ ea6179004eb9493e90a4ceae4dad2a7c.png).  
+  ![mau exemplo](http://image.prntscr.com/image/ea6179004eb9493e90a4ceae4dad2a7c.png).  
   No mínimo, isso facilitará muito a adição de um novo elemento posteriormente, quando for necessário, a pedido do cliente, fazer uma folha de 4 elementos, e não três, como aqui. Além disso, a segunda abordagem é muito inconveniente se o conteúdo for gerado dinamicamente. Então, se você criar um layout que os clientes irão anexar ao back-end, e você fizer tal layout, as maldições de seus programadores e danos a todo o nosso carma são garantidos.
  
 <a name="1.2"></a>
