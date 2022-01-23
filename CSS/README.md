@@ -24,7 +24,7 @@
  
   Todos os estilos conectados à página são globais e, se isso for abusado, você poderá facilmente levar o projeto a um estado de introdução extremamente dolorosa de qualquer novo elemento ou alteração do antigo. Isso acontece com mais frequência quando classes "gerais" são criadas e anexadas a diferentes elementos da página (um exemplo banal é um cabeçalho que possui um formulário de pesquisa dentro, que está em todas as páginas com as mesmas classes) e, como resultado, quando, de acordo com o design, em páginas diferentes aparecem pequenas diferenças no cabeçalho, as classes que reescrevem as propriedades se multiplicam. E assim para quase todos os elementos de cada página. Como resultado, alterando o link mais à direita na barra lateral da página de notícias, você pode quebrar o layout de toda a barra lateral em alguma outra página, por exemplo, na página da conta pessoal.
  
-  Para evitar que isso aconteça, existem diferentes metodologias, por exemplo, `BEM` (leia sobre isso pelo menos em termos gerais) ou, por exemplo, [rscss](https://rscss.io/index.html). Para começar, você pode estudar [ umapequena abordagem] (https://isobar-us.github.io/code-standards/) que os caras do `Isobar` usam - está descrito dentro do padrão deles e consiste em 7 pequenos parágrafos.
+  Para evitar que isso aconteça, existem diferentes metodologias, por exemplo, `BEM` (leia sobre isso pelo menos em termos gerais) ou, por exemplo, [rscss](https://rscss.io/index.html). Para começar, você pode estudar [uma pequena abordagem](https://isobar-us.github.io/code-standards/) que os caras do `Isobar` usam - está descrito dentro do padrão deles e consiste em 7 pequenos parágrafos.
  
 <a name="1.4"></a>
  
