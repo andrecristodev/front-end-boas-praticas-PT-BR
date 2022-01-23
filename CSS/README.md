@@ -493,7 +493,7 @@
   possível solução é usar um elemento wrapper dentro da tag (por exemplo, `span class="button__text"` dentro de um botão), e já definir a `display: flex`:
  
   ```html
-  <botão class="botão">
+  <button class="botão">
     <intervalo class="button_text">...</span>
   </button>
   ```
@@ -505,6 +505,6 @@
   }
   ```
  
-  Você pode ler mais sobre este e outros bugs que ocorrem ao trabalhar com flex em [Flexbugs](https://github.com/philipwalton/flexbugs), traduzido para russo [aqui](https://css-live .ru/articles/brauzernye-bagi-flexbox.html).
+  Você pode ler mais sobre este e outros bugs que ocorrem ao trabalhar com flex em [Flexbugs](https://github.com/philipwalton/flexbugs).
  
   Para resolver problemas com flex, você pode usar um bom [postcss-plugin] (https://github.com/luisrudge/postcss-flexbugs-fixes), que corrige automaticamente alguns bugs na escrita de estilos para flex.
